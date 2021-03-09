@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <!-- Stylesheet -->
+  <!-- CSS File -->
+  <link rel="stylesheet" type="text/css" href="/assets/CSS/cetalks.css">
+  <link rel="stylesheet" type="text/css" href="/assets/CSS/team.css">
+
+  <!-- SCSS File -->
+  <link rel="stylesheet" type="text/css" href="/assets/CSS/scss/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://kit.fontawesome.com/231066b483.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>CETalks</title>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <nav class="navbar fixed-top navbar-light navbar-expand-xl ">
+        <a class="navbar-brand" href="/cetalks.html"><img class="navimage" src="/images/cetalks.png" alt="logo"><span
+            class="cetalks "><span class="cet">CET</span><span class="alks">alks</span></span>
+        </a>
+        <div class="d-flex flex-row order-2 order-xl-3 pt-2 ">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item active "><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                href="https://www.facebook.com/CETalks/"><i class="fab fa-facebook"></i></a></li>
+            <li class="nav-item active"><a class="nav-link px-1 hvr-underline-from-center modify-icon"
+                href="https://open.spotify.com/show/5AGpr7Sd0kjciMAFxSuC0y?si=lKhC9EoqQAO_LAtJzC_Avg&utm_source=copy-link"><i
+                  class="fab fa-spotify"></i></a></li>
+            <li class="nav-item active"><a class="nav-link px-1 hvr-underline-from-center modify-icon"
+                href="https://www.youtube.com/channel/UCYiLt1pZnf2dslVLSe0WAXQ"><i class="fab fa-youtube"></i></a></li>
+            <li class="nav-item active"><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                href="https://www.instagram.com/CETalks/"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item active "><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                href="https://play.google.com/store/apps/details?id=com.cet.cetalksnew&showAllReviews=true"><i
+                  class="fab fa-google-play"></i></a></li>
+          </ul>
+
+          <button onclick="myFunction()" class="navbar-toggler  ml-auto crumb-change threelines" type="button"
+            data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-expand-md order-3 order-sm-2 fullnavspace mydropdown pl-0"
+          id="navbarNavDropdown" style="text-align: center; ">
+          <ul class="navbar-nav ml-auto row dropdownline  " style="margin: 0 auto;">
+
+            <li class="nav-item active col-md-4 hvr-underline-from-center midhead" id=""><a class="nav-link modify"
+                href="/cetalks.html"><i class="fas fa-home pr-2"></i>Home</a></li>
+            <li class="nav-item active col-md-4 hvr-underline-from-center midhead "><a class="nav-link modify"
+                href="/events.html">
+                <i class="far fa-calendar-alt pr-2"></i>Events</a></li>
+
+            <li class="nav-item active col-md-4 hvr-underline-from-center midhead "><a class="nav-link modify"
+                href="/teamcet.html"><i class="fas fa-users pr-2"></i>Team</a></li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200">Team</h1>
+        <p class="lead"></p>
+      </div>
+    </div>
+    <section id="team" class="team section-bg">
+      <p data-aos="fade-up" class="mt-1">Core Team</p>
+
+      <!-- Slider is used to make the photos slide and it is from a library -->
+
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/naveen.jpeg" alt="">
+
+          <!-- <a href=""><i class="fab fa-facebook faceb"></i></a> -->
+          <div class="member card-body">
+            <h4 class="card-title">Naveen</h4>
+            <span class="card-text">Chairman</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb "></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/nikhita.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Nikhita</h4>
+            <span class="card-text">Vice Chairperson</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/fasila.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Fasila Backer</h4>
+            <span class="card-text">Chief RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/mahshook.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Mahshook A K</h4>
+            <span class="card-text">General Secretary</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/keerthana.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Keerthana P S</h4>
+            <span class="card-text">Program Head</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- 2nd row -->
+      <!-- <div class="section-title"> -->
+
+      <p data-aos="fade-up" class="mt-5">Sub Panel</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/aswinca.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Aswin C A</h4>
+            <span class="card-text">Technical Head</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/ann.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ann Vithayathil</h4>
+            <span class="card-text">Publicity Head</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/hrishi.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Hrishikesh</h4>
+            <span class="card-text">Design Head</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/ujjwal.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ujjwal Krishna</h4>
+            <span class="card-text">Publicity Coordinator</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/ken.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ken George</h4>
+            <span class="card-text">Program Coordinator</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- 3rd Row -->
+
+      <p data-aos="fade-up" class="mt-5">RJ's</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/ardhrarj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ardhra V S</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/athulrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Athul</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/akhilarj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Akhila C K</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/abhishekrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Abhishek Manoharan</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/harirj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">HariKrishnan S</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/seznarj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Sezna</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/akshayrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Akshay Dinesh</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/anverrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Anver Sadique</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/ankitharj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ankitha Jzy</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/shreyarj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Shreya Sajeev</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/joelrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Joel</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/manurj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Manu M</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/sudevrj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Sudev Suresh</h4>
+            <span class="card-text">RJ</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <!-- Technical Team -->
+      <p data-aos="fade-up" class="mt-5">Technical Team</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/sreeraj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Sreeraj T R</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/adarsh.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Adarsh</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/rohith.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Rohit</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/adithya.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Adithya Nair</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/yasir.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Muhammed Yasir K</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/harilal.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Harilal V</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/sidharth.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Sidharth S</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/aswins.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Aswin S</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/abhiram2.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Abhiram P</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/abhijit1.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Abhijith V V</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/gokul.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Gokul Krishna</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/abhijith2.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Abhijith T R</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/roshan2.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Roshan</h4>
+            <span class="card-text">Tech Team</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <p data-aos="fade-up" class="mt-5">Design Team</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/karthik.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Karthik</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/vaishak.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Vaishak</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/akshayraj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Akshay Raj</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/arjun.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Arjun Lailas</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/aswinmanoj.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Aswin Manoj</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/salman.jpeg">
+          <div class="member card-body">
+            <h4 class="card-title">Salman</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/abhiram.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Abhiram</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/roshan.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Roshan</h4>
+            <span class="card-text">Design</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Row -->
+      <p data-aos="fade-up" class="mt-5">Program Team</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/kannan.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Kannan Karippayil</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/ashique.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ashique K K</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team//fazal.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Fazal C Hameed</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/mariyam.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Mariyam Jabeen</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch">
+
+          <img class="card-img-top" src="/images/team/ananya.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ananya Ayasi</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/fawas.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Fawas M K</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/ranjana.jpeg" alt="">
+          <div class="member card-body">
+            <h4 class="card-title">Ranjana</h4>
+            <span class="card-text">Program</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <p data-aos="fade-up" class="mt-5">Developer</p>
+      <div class="row slider eachrow" data-aos="fade-up">
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/mushtaq.jpeg" alt="">
+
+          <!-- <a href=""><i class="fab fa-facebook faceb"></i></a> -->
+          <div class="member card-body">
+            <h4 class="card-title">Mushtaq</h4>
+            <span class="card-text">App Developer</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb "></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-0 col-12 d-flex align-items-stretch" style="width: 260px;">
+
+          <img class="card-img-top" src="/images/team/rahul.jpeg" alt="">
+
+          <!-- <a href=""><i class="fab fa-facebook faceb"></i></a> -->
+          <div class="member card-body">
+            <h4 class="card-title">Rahul</h4>
+            <span class="card-text">Web Developer</span>
+            <div class="social">
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-facebook faceb "></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-instagram insta"></i></a>
+              <a href="" class="hvr-grow-shadow"><i class="fab fa-linkedin linked"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Start of Footer -->
+  <footer id="footer">
+    <div class="foottop">
+      <div class="container">
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <div class="footericon">
+              <img class="footerimage" src="/images/cetalks.png" alt="logo">
+              <h3>CETalks</h3>
+            </div>
+            <p>Official Radio of College of Engineering Trivandrum</p>
+          </div>
+        </div>
+
+
+
+        <div class="socialicons">
+          <a class=" faceb m-0 py-0" href="https://www.facebook.com/CETalks/"><i
+              class="fab fa-facebook align-middle"></i></a>
+          <a class="spotif m-0 py-0"
+            href=" https://open.spotify.com/show/5AGpr7Sd0kjciMAFxSuC0y?si=lKhC9EoqQAO_LAtJzC_Avg&utm_source=copy-link"><i
+              class="fab fa-spotify align-middle"></i></a>
+          <a class=" insta m-0 py-0" href="https://www.instagram.com/CETalks/"><i
+              class="fab fa-instagram align-middle"></i></a>
+          <a class="youtu m-0 py-0" href="https://www.youtube.com/channel/UCYiLt1pZnf2dslVLSe0WAXQ"><i
+              class="fab fa-youtube align-middle"></i></a>
+        </div>
+
+      </div>
+    </div>
+    <!-- Last Part of Footer -->
+    <div class="container footbottom clearfix">
+      <div class="copy-right">
+        &copy; Copyright <strong><span>CETalks</span></strong>
+      </div>
+
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <!-- JS File -->
+  <script src="/assets/JavaScript/team.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Slick JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      easing: 'ease-in-out',
+      // anchorPlacement: 'top-bottom',
+      duration: 800,
+      once: true,
+    });
+  </script>
+  <!-- Below code is for slider -->
+  <script>
+    $('.slider').slick({
+      centerMode: true,
+      arrows: false,
+      variableWidth: true,
+      infinite: true,
+      dots: true,
+      centerPadding: '0px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            variableWidth: true,
+            centerMode: true,
+            centerPadding: '18px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            infinite: true,
+            variableWidth: true,
+            centerMode: true,
+            centerPadding: '18px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>

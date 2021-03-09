@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <!-- Stylesheet -->
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="/assets/CSS/cetalks.css">
+    <link rel="stylesheet" type="text/css" href="/assets/CSS/team.css">
+    <link rel="stylesheet" type="text/css" href="/assets/CSS/events.css">
+    <!-- SCSS File -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/CSS/scss/styles.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/CSS/icofont.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/CSS/boxicons.min.css"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/231066b483.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>CETalks</title>
+</head>
+
+
+<!-- /* ---------------------------------------------------------Footer-------------------------------------------------------------------------- */ -->
+
+
+<body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <nav class="navbar fixed-top navbar-light navbar-expand-xl ">
+
+                <a class="navbar-brand" href="/cetalks.html"><img class="navimage" src="/images/cetalks.png"
+                        alt="logo"><span class="cetalks "><span class="cet">CET</span><span
+                            class="alks">alks</span></span>
+                </a>
+                <div class="d-flex flex-row order-2 order-xl-3 pt-2 ">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item active "><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                                href="https://www.facebook.com/CETalks/"><i class="fab fa-facebook"></i></a></li>
+                        <li class="nav-item active"><a class="nav-link px-1 hvr-underline-from-center modify-icon"
+                                href="https://open.spotify.com/show/5AGpr7Sd0kjciMAFxSuC0y?si=lKhC9EoqQAO_LAtJzC_Avg&utm_source=copy-link"><i
+                                    class="fab fa-spotify"></i></a></li>
+                        <li class="nav-item active"><a class="nav-link px-1 hvr-underline-from-center modify-icon"
+                                href="https://www.youtube.com/channel/UCYiLt1pZnf2dslVLSe0WAXQ"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li class="nav-item active"><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                                href="https://www.instagram.com/CETalks/"><i class="fab fa-instagram"></i></a></li>
+                        <li class="nav-item active "><a class="nav-link px-1  hvr-underline-from-center modify-icon"
+                                href="https://play.google.com/store/apps/details?id=com.cet.cetalksnew&showAllReviews=true"><i
+                                    class="fab fa-google-play"></i></a></li>
+
+                    </ul>
+
+                    <button onclick="myFunction()" class="navbar-toggler  ml-auto crumb-change threelines" type="button"
+                        data-toggle="collapse" data-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-expand-md order-3 order-sm-2 fullnavspace mydropdown"
+                    id="navbarNavDropdown" style="text-align: center; ">
+                    <ul class="navbar-nav ml-auto row dropdownline  " style="margin: 0 auto;">
+
+                        <li class="nav-item active col-md-4 hvr-underline-from-center midhead" id=""><a
+                                class="nav-link modify" href="/cetalks.html"><i class="fas fa-home pr-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item active col-md-4 hvr-underline-from-center midhead "><a
+                                class="nav-link modify" href="/events.html">
+                                <i class="far fa-calendar-alt pr-2"></i>Events</a></li>
+
+                        <li class="nav-item active col-md-4 hvr-underline-from-center midhead "><a
+                                class="nav-link modify" href="/teamcet.html"><i class="fas fa-users pr-2"></i>Team</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+
+            <h1 class="display-4 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200">EVENTS</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-lg-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="slideshow-container card-img-top">
+                        <div class="mySlides fade">
+                            <img src="/images/events/arun.jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/events/arya.jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="/images/events/anwin.jpeg" style="width:100%">
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2 pt-0 px-2 mb-1 mt-3">
+
+                        <h5 class="card-title">Spotlight</h5>
+                        <p class="card-text mb-3">This is a wider card with supporting text below as a natural lead-in
+                            to
+                            additional content. This content is a little bit longer.</p>
+                        <p><a href="#" class="btn btn-danger">Bookings Closed</a>
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-6 col-sm-12 col-lg-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="slideshow-container card-img-top">
+                        <div class="mySlidestwo fade">
+                            <img src="/images/events/anwin.jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlidestwo fade">
+                            <img src="/images/events/arya.jpeg" style="width:100%">
+
+                        </div>
+                        <div class="mySlidestwo fade">
+                            <img src="/images/events/arun.jpeg" style="width:100%">
+
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2 pt-0 px-2 mb-1 mt-3">
+
+                        <h3 class="card-title">POP Talks</h3>
+                        <p class="card-text mb-3">This is a wider card with supporting text below as a natural lead-in
+                            to
+                            additional content. This content is a little bit longer.</p>
+                        <p><a href="#" class="btn btn-light disabled">No Registration Required</a></p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <!-- <a href="#" class="btn btn-danger">Go somewhere</a> -->
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+            <div class=" col-md-6 col-sm-12 col-lg-4" data-aos="fade-up">
+                <div class="card">
+                    <div class="slideshow-container card-img-top">
+                        <div class="mySlidesthree fade">
+                            <img src="/images/events/arun.jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlidesthree fade">
+                            <img src="/images/events/anwin.jpeg" style="width:100%">
+
+                        </div>
+                        <div class="mySlidesthree fade">
+                            <img src="/images/events/arya.jpeg" style="width:100%">
+
+                        </div>
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2 pt-0 px-2 mb-1 mt-3">
+
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text mb-3">This is a wider card with supporting text below as a natural lead-in
+                            to
+                            additional content. This content is a little bit longer.</p>
+                        <p><a href="#" class="btn btn-danger">Registrations Closed</a></p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Row Slick SliderS -->
+
+
+    <div class="container-fluid" id="eventmainpage">
+        <!-- <div class="section-title"> -->
+        <h2 data-aos="zoom-in">Explore more Events</h2>
+
+    </div>
+    <div class="eventscard">
+        <!-- <p data-aos="fade-up">Core Team</p> -->
+
+        <div class="row slider eachrow" data-aos="fade-up">
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href=""><button type="button" class="btn btn-primary spotif mr-1 btn-sm clearfix"><i
+                                    class="fab fa-spotify"></i>
+
+
+
+                            </button></a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- 2nd row -->
+    <!-- <div class="section-title"> -->
+
+
+    </div>
+    <div class="eventscard">
+        <!-- <p data-aos="fade-up">Core Team</p> -->
+
+        <div class="row slider" data-aos="fade-up" id="secrow">
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-0 col-12 d-flex align-items-stretch" style="width: 24rem;">
+                <div class="card" style="width: 24rem;">
+                    <img src="/images/events/arya.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body pb-2 pt-0 px-2">
+                        <h5 class="card-title">Get Set Radio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start of Footer -->
+    <footer id="footer">
+        <div class="foottop">
+            <div class="container">
+                <div class="row  justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="footericon">
+                            <img class="footerimage" src="/images/cetalks.png" alt="logo">
+                            <h3>CETalks</h3>
+                        </div>
+                        <p>Official Radio of College of Engineering Trivandrum</p>
+                    </div>
+                </div>
+
+
+
+                <div class="socialicons">
+                    <a class=" faceb m-0 py-0" href="https://www.facebook.com/CETalks/"><i
+                            class="fab fa-facebook align-middle"></i></a>
+                    <a class="spotif m-0 py-0"
+                        href=" https://open.spotify.com/show/5AGpr7Sd0kjciMAFxSuC0y?si=lKhC9EoqQAO_LAtJzC_Avg&utm_source=copy-link"><i
+                            class="fab fa-spotify align-middle"></i></a>
+                    <a class=" insta m-0 py-0" href="https://www.instagram.com/CETalks/"><i
+                            class="fab fa-instagram align-middle"></i></a>
+                    <a class="youtu m-0 py-0" href="https://www.youtube.com/channel/UCYiLt1pZnf2dslVLSe0WAXQ"><i
+                            class="fab fa-youtube align-middle"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Last Part of Footer -->
+        <div class="container footbottom clearfix">
+            <div class="copy-right">
+                &copy; Copyright <strong><span>CETalks</span></strong>
+            </div>
+
+        </div>
+
+    </footer><!-- End Footer -->
+
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous">
+        </script>
+    <!-- JS File -->
+    <!-- <script src="/assets/JavaScript/team.js" crossorigin="anonymous"></script> -->
+    <script src="/assets/JavaScript/events.js" crossorigin="anonymous"></script>
+    <!-- <script src="/assets/JavaScript/team.js" crossorigin="anonymous"></script> -->
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.slider').slick({
+            centerMode: true,
+            arrows: false,
+            variableWidth: true,
+            infinite: true,
+            dots: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        variableWidth: true,
+                        centerMode: true,
+                        centerPadding: '18px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        variableWidth: true,
+                        centerMode: true,
+                        centerPadding: '18px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        //Pre Loader
+        $(window).on('load', function () {
+            setTimeout(function () {
+                $(".loader_bg").fadeToggle();
+            }, 0);
+
+        });
+
+        // //Pre Loader
+        // $(window).on('load', function () {
+        //     setTimeout(function () {
+        //         $(".loader_bg").fadeToggle();
+        //     }, 0);
+
+        // });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // offset: 60,
+            easing: 'ease-in-out',
+            // anchorPlacement: 'top-bottom',
+            duration: 900,
+            once: true,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
