@@ -1,0 +1,339 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+/* Preloader */
+.loading {
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+.preloader {
+    background: #fff;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.preloader4 {
+    position: absolute;
+    margin: -17px 0 0 -17px;
+    left: 50%;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 0px;
+    border-radius: 100%;
+    border: 2px solid;
+    border-top-color: rgba(0, 0, 0, 0.65);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-left-color: rgba(0, 0, 0, 0.65);
+    border-right-color: rgba(0, 0, 0, 0.15);
+    -webkit-animation: preloader4 0.8s linear infinite;
+    animation: preloader4 0.8s linear infinite;
+}
+
+@keyframes preloader4 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes preloader4 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: url("/images/Jumbo/Untitled14.jpg") top center;
+    background-size: cover;
+    margin-top: 99px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.jumbotron h1 {
+    font-size: 5.1rem;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+
+@media only screen and (max-width:768px) {
+    .jumbotron h1 {
+        font-size: 3.1rem;
+
+    }
+}
+
+/* text between lines */
+
+#eventmainpage h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventmainpage h2:before,
+#eventmainpage h2:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#eventmainpage h2:before {
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+#eventmainpage h2:after {
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+#eventmainpage h2 {
+    margin: 60px auto 0px auto;
+    text-align: center;
+    font-size: 3.3rem;
+    font-weight: 300;
+}
+
+/* Card */
+.card-body {
+    margin: 15px 0px 0px 0px;
+}
+
+.eventscard p {
+    color: black;
+    margin-top: 9px;
+}
+
+.eventscard .eachrow {
+    /* margin-top: 100px; */
+    margin: 72px 60px 100px 60px;
+}
+
+#secrow {
+    margin: 72px 60px 180px 60px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /* For desktop: */
+    .eventscard .eachrow {
+        /* margin-top: 100px; */
+        margin: 0;
+    }
+
+    .eventscard #secrow {
+        margin-top: 60px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #team p {
+        margin-top: 51px;
+        margin-bottom: 10px;
+    }
+
+    #eventmainpage h2 {
+        font-size: 1.8rem;
+        margin: 30px auto 45px auto;
+    }
+
+    #eventmainpage h2:before {
+        margin-right: 6px;
+        margin-left: 20px;
+    }
+
+    #eventmainpage h2:after {
+        margin-right: 20px;
+        margin-left: 6px;
+    }
+
+    .card .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .eventscard p {
+        color: black;
+        margin-top: 12px;
+    }
+}
+
+/* Below is for the changing image */
+
+.eventscard .mySlides {
+    display: none;
+}
+
+.mySlidestwo {
+    display: none;
+}
+
+.myslidesthree {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+.dot {
+    display: none;
+    margin: 0 2px;
+    /* background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block; */
+    transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    /* -webkit-animation-duration: 2.5s; */
+    animation-name: fade;
+    animation-duration: 3.5s;
+    animation-timing-function: ease;
+    /* animation-delay: -2s; */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.8;
+    }
+
+
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin-bottom: 36px;
+    }
+
+    .card .card-body .card-title {
+
+        font-size: 0.8rem;
+
+    }
+
+    .card .card-body .card-text {
+
+        font-size: 0.6rem;
+
+    }
+
+}
+
+/* card */
+.card {
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* background: #dde1e7; */
+    box-shadow: -3px -3px 6px #ffffff, 3px 3px 6px #00000070;
+}
+
+.card .card-body {
+    position: relative;
+}
+
+.card .card-body .spotif {
+    position: absolute;
+    top: -29%;
+    left: 78%;
+
+}
+
+.card .card-body .card-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 660;
+    font-family: calibri;
+    margin-bottom: 3px;
+}
+
+.card .card-body .card-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: 260;
+    font-family: Verdana;
+}
+
+.card .card-body p .text-muted {
+    float: right;
+}
+
+.card .card-body .btn {
+    margin: 0 auto;
+}
+
+.card .card-body .spotif {
+    font-size: 1.6rem;
+    text-align: center;
+    background: #1DD05D;
+    color: #000;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+@media only screen and (max-width:768px) {
+    .card .card-body .spotif {
+        font-size: 1.2rem;
+        top: -21%;
+    }
+}

@@ -1,0 +1,911 @@
+/* Preloader */
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader::before {
+  content: '';
+  border: 1em solid #e4cd3d;
+  border-radius: 100%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.loader::after {
+  content: '';
+  border: 1em solid #FF4A31;
+  border-radius: 90%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loader 2s linear infinite;
+  opacity: 0;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.loader:before {
+  animation-delay: 0.5s;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav .dropdownline {
+  padding-bottom: 6px;
+  padding-left: 0px;
+  padding-top: 0px;
+  /* background-color: ; */
+}
+
+
+header a .navimage {
+  height: 4.2rem;
+  padding-right: 9px;
+}
+
+.navigshow {
+  display: none;
+}
+
+.navbar {
+  background-color: TRANSPARENT;
+  color: black;
+  /* border-bottom: 1px solid rgb(255, 255, 255); */
+  /* box-shadow: 0px 1px 20px rgba(136, 136, 136, 0.3); */
+  height: 104px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For desktop: */
+  header a .navimage {
+    height: 3.9rem;
+    padding-right: 9px;
+  }
+
+  .navbar {
+    height: 94px;
+    padding-top: 0px;
+  }
+}
+
+.cetalks {
+  position: relative;
+  top: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+.cetalks .cet {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.cetalks .alks {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.modify {
+  margin-right: 9px;
+  font-size: 1.8rem;
+  font-weight: 590;
+  font-family: "Nunito", sans-serif;
+  color: aqua;
+}
+
+nav ul .midhead {
+  margin: 0 auto;
+  width: 200px;
+  color: #7e3b3b;
+}
+
+.modify-icon {
+  font-size: 2.1rem;
+}
+
+.navimage {
+  margin-top: 9px;
+  margin-right: 1px;
+  margin-bottom: 6px;
+}
+
+nav .threelines {
+  font-size: larger;
+  font-weight: 900;
+  padding: 3px 3px 3px 3px;
+  border: none;
+}
+
+nav .threelines:focus {
+  border: none;
+  outline: none !important;
+}
+
+.show {
+  display: block;
+}
+
+.navbar .navbar-brand {
+  color: #7e3b3b;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fullnavspace {
+  /* CHANGED */
+  background: TRANSPARENT;
+  position: relative;
+  top: -3px;
+}
+
+/* last change to icons in middle navbar
+ */
+svg.svg-inline--fa.fa-home.fa-w-18.pr-2 {
+  font-size: 36px;
+}
+
+svg.svg-inline--fa.fa-calendar-alt.fa-w-14.pr-2 {
+  font-size: 36px;
+}
+
+svg.svg-inline--fa.fa-users.fa-w-20.pr-2 {
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+  svg.svg-inline--fa.fa-home.fa-w-18.pr-2 {
+    font-size: 30px;
+  }
+
+  svg.svg-inline--fa.fa-calendar-alt.fa-w-14.pr-2 {
+    font-size: 30px;
+  }
+
+  svg.svg-inline--fa.fa-users.fa-w-20.pr-2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+  /* For desktop: */
+  .fullnavspace {
+    box-shadow: 0px 14px 20px 1px rgba(136, 136, 136, 0.3);
+  }
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #f0ea66;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For desktop: */
+  .modify {
+    font-size: 1.4rem;
+  }
+
+
+}
+
+@media only screen and (max-width: 601px) {
+
+  /* For desktop: */
+  .modify-icon {
+    font-size: 1.3rem;
+  }
+
+  .cetalks {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  nav .dropdownline {
+    /* padding-left: 126px; */
+    padding-top: 24px;
+  }
+}
+
+/* End of Navbar */
+
+/* Start of First Page */
+.firstpage {
+  background: url("/CETalks/images/bg.png") top center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.firstpage:before {
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.firstpage .main-writeup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+
+  /* transform: translateY(22vh); */
+
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* First page of Landscape orientation */
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .firstpage {
+    height: 100vh;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+  #intro {
+    background-attachment: fixed;
+  }
+}
+
+/* /Font change for lower screen sizes/ */
+@media only screen and (max-width: 766px) {
+  .firstpage .main-writeup h1 {
+    font-size: 3.9rem;
+  }
+}
+
+/* Below media query is for landscape orientation btween two breakpoints */
+@media only screen and (min-width: 457px) and (max-width: 767px) and (orientation: landscape) {
+  .firstpage .main-writeup {
+    /* transform: translateY(50vh);
+     */
+  }
+
+  section.firstpage {
+    height: 100vh;
+  }
+}
+
+.firstpage h1 {
+  color: black;
+  font-size: 6.9rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.firstpage h1 span {
+  color: #ff4040;
+}
+
+.firstpage p {
+  color: black;
+  font-weight: 570;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .section-title h2 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .firstpage p {
+    font-size: 18px;
+  }
+}
+
+/* CHECK */
+/* Below CSS is for round play button */
+
+.firstpage .play-btn {
+  width: 194px;
+  height: 194px;
+  padding-top: 51px;
+  background: radial-gradient(#f82249 50%, rgba(101, 111, 150, 0.15) 52%);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.firstpage .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.firstpage .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(163, 163, 163, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.firstpage .play-btn:hover::after {
+  border-left: 15px solid #f82249;
+  transform: scale(20);
+}
+
+.firstpage .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+.firstpage .about-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
+
+.firstpage .about-btn:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/* End of Play/Pause Button */
+
+/* Start of 2nd Page Contact Us */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 33px;
+}
+
+.section-title h2 {
+  font-weight: 600;
+  font-size: 3.3rem;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 27px;
+  color: black;
+}
+
+/* .section-title h2:after {
+  content: "➥";
+
+  margin: auto;
+}
+
+.section-title h2:before {
+  margin-right: 30px;
+  margin-left: 20px;
+} */
+
+.section-title .under-line {
+  border-top: 1px solid #eb5d1e;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For desktop: */
+  .section-title h2 {
+    font-size: 2.3rem;
+  }
+
+}
+
+.section-title .section-title p {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 32px;
+  font-weight: 499;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cont-bar {
+  border-top: 3px solid #FF4A33;
+  border-bottom: 3px solid #FF4A33;
+  padding: 30px;
+  margin-bottom: 42px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cont-bar i {
+  font-size: 20px;
+  color: #FF4A33;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fdf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cont-bar h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.cont-bar p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #7a6960;
+}
+
+.contact .cont-bar .social-links {
+  padding-left: 10px;
+}
+
+.contact .cont-bar .social-links a {
+  font-size: 36px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 10;
+  padding: 0p 3px 0px 0px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 66px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .cont-bar .social-links a:hover {
+  background: #FF4A33;
+  color: #fff;
+}
+
+.contact .cont-bar .email:hover i,
+.contact .cont-bar .address:hover i,
+.contact .cont-bar .phone:hover i {
+  background: #FF4A33;
+  color: #fff;
+}
+
+
+/* End of Box in Contact Us page */
+
+/* Start of left svg and text */
+.leftapp {
+  text-align: center;
+  margin-bottom: 45px;
+  margin-top: 15px;
+  margin: 0 auto;
+}
+
+.leftapp #svganime {
+  display: block;
+  margin-top: 20px;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 766px) {
+  .leftapp {
+    margin: 0 auto;
+  }
+
+  .leftapp #svganime {
+    height: 400px;
+    width: 310px;
+    margin: 0 auto;
+  }
+
+  .leftapp h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* First part of footer */
+#footer {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+  font-size: 14px;
+  position: relative;
+  margin-top: 60px;
+}
+
+#footer .foottop {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0 auto;
+}
+
+.foottop .footericon .footerimage {
+  height: 84px;
+  width: 99px;
+}
+
+#footer .foottop h3 {
+  font-size: 46px;
+  font-weight: 699;
+  color: white;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  padding-left: 6px;
+  top: 20px;
+}
+
+#footer .foottop p {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  margin: 12px 0 6px 0;
+  padding: 0;
+}
+
+/* Check Below */
+#footer .foottop .socialicons {
+  margin: 18px auto 0px auto;
+}
+
+#footer .foottop .socialicons a {
+  font-size: 37px;
+  margin-top: 21px;
+  background: transparent;
+  color: white;
+  padding: 0px 5px 0px 5px;
+  /* margin-right: 4px; */
+  border-radius: 8px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+
+#footer .foottop .socialicons a svg {
+  transform: translateY(-6px);
+}
+
+/* For Small Screens */
+
+@media only screen and (max-width: 768px) {
+
+  #footer .foottop p {
+    font-size: 12px;
+    margin: 18px 0 6px 0;
+    padding: 0;
+  }
+
+  #footer .foottop h3 {
+    font-size: 30px;
+    top: 12px;
+    padding-left: 4px;
+
+  }
+
+  #footer .foottop .socialicons a {
+    font-size: 24px;
+    /* display: inline-block; */
+    background: transparent;
+    /* color: white; */
+    line-height: 3px;
+    padding: 0px 5px 0px 0px;
+    /* padding: 0px 8px 8px 8px; */
+    /* margin-right: 9px; */
+    border-radius: 8px;
+    text-align: center;
+
+    /* transition: 0.3s; */
+  }
+
+  #footer .foottop .socialicons a svg {
+    transform: translateY(0px);
+  }
+
+
+  .foottop .footericon .footerimage {
+    height: 45px;
+    width: 53px;
+  }
+
+  .foottop .footericon h3 {
+    font-size: 9px;
+    top: 20px;
+  }
+
+  #footer .foottop p {
+    font-size: 14px;
+    margin: 9px 0 6px 0;
+  }
+
+  #footer .foottop .socialicons {
+    margin: 18px auto 0px auto;
+    padding: 0;
+  }
+
+  #footer .foottop .socialicons a {
+    font-size: 27px;
+    width: 42px;
+    height: 42px;
+  }
+
+  #footer .footbottom {
+    border-top: 1px solid #d9dce2;
+    z-index: 2;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Social Media hover */
+
+
+}
+
+#footer .foottop .socialicons .faceb {
+  /* color: #4294ff; */
+  color: white;
+  /* padding: 0px 6px 0px 0px; */
+  /* co #fff; */
+  text-decoration: none;
+}
+
+
+#footer .foottop .socialicons .spotif {
+  /* color: #1ed760; */
+  color: white;
+  /* padding: 0px 4px 0px 0px; */
+  /* color: black; */
+  text-decoration: none;
+}
+
+#footer .foottop .socialicons .insta {
+  /* padding: 0px 4px 0px 0px; */
+  color: white;
+  /* color: #FF7A44; */
+
+  text-decoration: none;
+}
+
+#footer .foottop .socialicons .youtu {
+  /* color: #ff0000; */
+  color: white;
+  /* padding: 0px 4px 0px 0px; */
+  /* color: #fff; */
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 780px) {
+
+
+  /* Social Media hover */
+  #footer .foottop .socialicons .faceb:hover {
+    background: #4294ff;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #footer .foottop .socialicons .spotif:hover {
+    background: #1ed760;
+    color: black;
+    text-decoration: none;
+  }
+
+  #footer .foottop .socialicons .insta:hover {
+    background: #833ab4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+        #fcb045,
+        #fd1d1d,
+        #833ab4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+        #fcb045,
+        #fd1d1d,
+        #833ab4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-decoration: none;
+  }
+
+  #footer .foottop .socialicons .youtu:hover {
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+}
+
+
+/* Last Part of Footer */
+
+
+#footer .footbottom {
+  border-top: 1px solid #d9dce2;
+  z-index: 2;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer .copy-right {
+  float: right;
+}
+
+
+@media (max-width: 992px) {
+
+  #footer .copy-right {
+    text-align-last: center;
+    -moz-text-align-last: center;
+  }
+}
